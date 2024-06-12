@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume | Alexandra Leshanu</title>
+<link rel="icon" type="image/x-icon" href="static/assets/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="static/assets/styles.css">
+<script src="/static/assets/script.js"></script>
+</head>
+<body>
+
+<div class="wrapper clearfix">
+<div class="left">
+
+  <div class="name-hero">
+
+    <div class="me-img"></div>
+
+    <div class="name-text">
+
+      <h1>Alexandra <em class="last-name" id="last-name"></em></h1>
+      <p>Moscow, Russia</p>
+      <p>sashaleshanu@gmail.com</p>
+      <p>+7 (977) 314-60-88</p>
+      <button id="contact-btn">Contact Me</button>
+    </div>
+  </div>
+</div>
+
+<div class="right">
+  <div class="inner">
+    <section>
+      <h1>Education</h1>
+      <p>September 2023 - Exp. June 2025 | <em>HSE University | Master's degree</em></p>
+      <p>System and Software Engineering</p>
+      <p>September 2019 - June 2023 | <em>MIREA - Russian Technological University | Bachelor's degree</em></p>
+      <p>Applied Mathematics and Information Science</p>
+    </section>
+    <section>
+      <h1>Employment</h1>
+      <p>March 2024 - Present | <em>Sberbank of Russia | Systems Analyst</em></p>
+      <p>Involved in designing a currency trading information system, 
+        its integration with other banking systems, responsible for database changes and writing scripts using plsql.</p>
+      <p>January 2023 - March 2024 | <em>Russian Agricultural Bank | Systems Analyst</em></p>
+      <p>Performed analytics of mobile application for brokerage services of Rosselkhozbank, 
+        performed manual testing, wrote instructions for industrial loop support staff, 
+        wrote SQL queries and maintained documentation on Confluence. </p>
+    </section>
+    <section>
+      <h1>Technical Skills</h1>
+      <p>Languages | <em>English - Advanced, Russian - Native</em></p>
+      <p>Linux | <em>Command line experience with major distributions</em></p>
+      <p>UML | <em>Knowledge of notation and experience with DrawIO</em></p>
+      <p>Programming Languages | <em>Java, C++, Python</em></p>
+      <p>Git  | <em>Command line, git(github) flow, githooks, complex commands</em></p>
+      <p>SQL  | <em>Writing simple queries</em></p>
+      <p>Databases | <em>PostgreSQL, MongoDB, Redis, MySQL, MSSQL</em></p>
+    </section>
+    <section>
+      <h1>Personal Interests</h1>
+      <ul class="skill-set">
+        <li>Gym</li>
+        <li>Gaming</li>
+        <li>Learning Languages</li>
+        <li>Music</li>
+        <li>Travelling</li>
+        <li>Photography</li>
+      </ul>
+    </section>
+    <section>
+      <div class="handmade">
+        <p>handmade by <em>Alexandra Leshanu</em></p>
+      </div>
+    </section>
+  </div>
+
+</div>
+</div>
+
+<div id="contact-form" class="contact-form">
+  <h2>Contact Me</h2>
+  <form action="{{ url_for('index') }}" method="POST" id="contact-form-fields">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+</body>
+</html>
